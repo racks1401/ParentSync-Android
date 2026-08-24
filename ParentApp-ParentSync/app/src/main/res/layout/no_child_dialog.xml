@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/_5sdp"
+    android:layout_margin="15dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:elevation="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select child"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_5sdp"
+        android:textStyle="bold"
+        android:textSize="@dimen/_13ssp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/separation_bar"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_145sdp">
+
+            <TextView
+                android:id="@+id/tv_fetching_child"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13ssp"
+                android:text="Fetching child please wait..."
+                android:layout_centerInParent="true"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_select_child_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                tools:listitem="@layout/list_item_paired_child"
+                android:text="No child found on the server, login with this same email in the child app to get started"
+                android:textSize="@dimen/_12ssp"/>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/separation_bar"/>
+
+    <TextView
+        android:id="@+id/tv_cancel_select_child_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:gravity="center"
+        android:padding="@dimen/_8sdp"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

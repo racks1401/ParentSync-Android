@@ -1,0 +1,115 @@
+# ============================================================
+# ParentSync - Android Project
+# ============================================================
+
+# ------------------------------------------------------------
+# Android Studio / IntelliJ
+# ------------------------------------------------------------
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Android Studio user-specific files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/usage.statistics.xml
+.idea/dictionaries/
+.idea/shelf/
+
+# ------------------------------------------------------------
+# Gradle
+# ------------------------------------------------------------
+
+.gradle/
+
+# All Gradle build directories in ParentApp / ChildApp
+**/build/
+
+# Local machine-specific Android SDK configuration
+local.properties
+
+# ------------------------------------------------------------
+# Android generated files / outputs
+# ------------------------------------------------------------
+
+# APK / App Bundle files
+*.apk
+*.aab
+*.apks
+
+# Generated release/debug directories
+**/release/
+**/debug/
+
+# Android Studio captures
+captures/
+
+# ------------------------------------------------------------
+# Native build files
+# ------------------------------------------------------------
+
+.externalNativeBuild/
+.cxx/
+
+# ------------------------------------------------------------
+# Signing / Keystore files
+# ------------------------------------------------------------
+
+*.jks
+*.keystore
+*.keystores
+
+# Signing configuration
+keystore.properties
+
+# ------------------------------------------------------------
+# Firebase configuration
+# ------------------------------------------------------------
+
+# Do not commit Firebase configuration to a public repository
+google-services.json
+!google-services.json.example
+
+# ------------------------------------------------------------
+# Environment / Secrets
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+
+# ------------------------------------------------------------
+# Logs / temporary files
+# ------------------------------------------------------------
+
+*.log
+*.tmp
+*.temp
+*.bak
+*~
+
+# ------------------------------------------------------------
+# OS generated files
+# ------------------------------------------------------------
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# ------------------------------------------------------------
+# Additional build/output files
+# ------------------------------------------------------------
+
+**/mapping/
+*.hprof
+*.ap_
+/lint-results*.xml
+
+# ------------------------------------------------------------
+# IDE run configs (optional)
+# ------------------------------------------------------------
+
+.idea/runConfigurations/

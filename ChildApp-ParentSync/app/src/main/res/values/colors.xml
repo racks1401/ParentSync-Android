@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ll_bg">#FFFFFF</color>
+
+    <color name="primary">#4CAF50</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#C8E6C9</color>
+    <color name="on_primary_container">#1B5E20</color>
+
+    <!-- Secondary -->
+    <color name="secondary">#03A9F4</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#B3E5FC</color>
+    <color name="on_secondary_container">#01579B</color>
+
+    <!-- Tertiary (optional accent) -->
+    <color name="tertiary">#FF9800</color>
+    <color name="on_tertiary">#000000</color>
+
+    <!-- Background and surface -->
+    <color name="surface">#FFFFFF</color>
+    <color name="on_surface">#212121</color>
+    <color name="surface_variant">#EEEEEE</color>
+    <color name="on_surface_variant">#666666</color>
+
+    <color name="background">#FAFAFA</color>
+    <color name="on_background">#000000</color>
+
+    <!-- Error -->
+    <color name="error">#B00020</color>
+    <color name="on_error">#FFFFFF</color>
+
+    <!-- Outline (for border, separator) -->
+    <color name="outline">#BDBDBD</color>
+
+    <color name="purple_primary">#7C72F2</color>
+    <color name="bg_light">#121212</color>
+    <color name="text_dark">#F5F5F5</color>
+    <color name="text_gray">#B0B0B0</color>
+    <color name="input_bg">#1E1E1E</color>
+    <color name="input_stroke">#333333</color>
+    <color name="button_text">#FFFFFF</color>
+
+    <!-- Base palette -->
+    <color name="brand_primary">#5B4FE5</color>
+    <color name="neutral_900">#1A1A2E</color>
+    <color name="neutral_400">#9E9E9E</color>
+    <color name="neutral_200">#E0E0E0</color>
+    <color name="neutral_100">#F5F3FC</color>
+    <color name="neutral_0">#FFFFFF</color>
+
+    <!-- Semantic roles (light mode) -->
+    <color name="color_background">@color/neutral_100</color>
+    <color name="color_surface">@color/neutral_0</color>
+    <color name="color_border">@color/neutral_200</color>
+    <color name="color_text_primary">@color/neutral_900</color>
+    <color name="color_text_secondary">@color/neutral_400</color>
+    <color name="color_primary">@color/brand_primary</color>
+    <color name="color_button_text">@color/neutral_0</color>
+</resources>

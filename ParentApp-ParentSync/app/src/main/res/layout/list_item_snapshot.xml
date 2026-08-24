@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="1dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_snap_list"
+                    android:layout_width="@dimen/_95sdp"
+                    android:layout_height="@dimen/_95sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_image_placeholder"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:id="@+id/tv_snap_upload_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of snapshot"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_11ssp"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+
+</LinearLayout>

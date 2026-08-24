@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.racks.parentalcontrol.parent.fragments.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_mapFragment"
+            app:destination="@id/mapFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_streamFragment"
+            app:destination="@id/streamFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_homeFragment_to_additionalSettingsFragment"
+            app:destination="@id/additionalSettingsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/snapshotFragment"
+        android:name="com.racks.parentalcontrol.parent.fragments.SnapshotFragment"
+        android:label="fragment_snapshot"
+        tools:layout="@layout/fragment_snapshot" >
+        <action
+            android:id="@+id/action_snapshotFragment_to_fullScreenSnapFragment"
+            app:destination="@id/fullScreenSnapFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.racks.parentalcontrol.parent.fragments.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.racks.parentalcontrol.parent.fragments.MapFragment"
+        android:label="MapFragment"
+        tools:layout="@layout/fragment_map"/>
+    <fragment
+        android:id="@+id/callsFragment"
+        android:name="com.racks.parentalcontrol.parent.fragments.CallsFragment"
+        android:label="fragment_calls"
+        tools:layout="@layout/fragment_calls" />
+    <fragment
+        android:id="@+id/streamFragment"
+        android:name="com.racks.parentalcontrol.parent.fragments.StreamFragment"
+        android:label="fragment_stream"
+        tools:layout="@layout/fragment_stream" >
+
+        <argument
+            android:name="streamMode"
+            app:argType="com.racks.parentalcontrol.parent.models.StreamMode"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fullScreenSnapFragment"
+        android:name="com.racks.parentalcontrol.parent.fragments.FullScreenSnapFragment"
+        android:label="fragment_full_screen_snap"
+        tools:layout="@layout/fragment_full_screen_snap" >
+
+        <argument
+            android:name="snap_url"
+            app:argType="string" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/additionalSettingsFragment"
+        android:name="com.racks.parentalcontrol.parent.fragments.AdditionalSettingsFragment"
+        android:label="fragment_additional_settings"
+        tools:layout="@layout/fragment_additional_settings" />
+
+</navigation>

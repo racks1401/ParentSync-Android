@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/notificationFragment"
+        android:title="Notification"
+        android:icon="@drawable/ic_notifications"/>
+
+    <item
+        android:id="@+id/callsFragment"
+        android:title="Calls"
+        android:icon="@drawable/ic_phone"/>
+
+    <item
+        android:id="@+id/snapshotFragment"
+        android:title="Snapshot"
+        android:icon="@drawable/ic_snapshot"/>
+
+</menu>

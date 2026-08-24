@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_map_view"
+        android:title="Map View"/>
+
+    <item
+        android:id="@+id/item_hybrid_view"
+        android:title="Hybrid View" />
+
+    <item
+        android:id="@+id/item_dark_mode"
+        android:title="Dark Mode"
+        android:checkable="true" />
+
+    <item
+        android:id="@+id/item_show_live_route"
+        android:title="Show Live Route"
+        android:checkable="true" />
+
+    <item
+        android:id="@+id/item_enable_route_history"
+        android:title="Enable Route History"
+        android:checkable="true" />
+
+
+</menu>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/viewFlipper"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ============ LOGIN SCREEN (index 0) ============ -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background"
+        android:padding="@dimen/spacing_lg">
+
+        <ImageView
+            android:id="@+id/ivHeroIllustration"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="@dimen/spacing_xl"
+            android:src="@drawable/welcome_logo"
+            android:contentDescription="@null"
+            android:importantForAccessibility="no"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            style="@style/TextAppearance.App.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_lg"
+            android:text="Welcome Back! 👋"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivHeroIllustration"/>
+
+        <TextView
+            android:id="@+id/tvSubtitleLogin"
+            style="@style/TextAppearance.App.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:text="Login to continue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+        <LinearLayout
+            android:id="@+id/layoutNameLogin"
+            style="@style/Widget.App.InputRow"
+            android:layout_marginTop="@dimen/spacing_xl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSubtitleLogin">
+
+            <ImageView
+                style="@style/Widget.App.InputIcon"
+                android:src="@drawable/ic_person" />
+
+            <EditText
+                android:id="@+id/etNameLogin"
+                style="@style/Widget.App.EditText"
+                android:hint="Full Name"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutEmailLogin"
+            style="@style/Widget.App.InputRow"
+            android:layout_marginTop="@dimen/spacing_md"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutNameLogin">
+
+            <ImageView
+                style="@style/Widget.App.InputIcon"
+                android:src="@drawable/ic_mail" />
+
+            <EditText
+                android:id="@+id/etEmailLogin"
+                style="@style/Widget.App.EditText"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutPasswordLogin"
+            style="@style/Widget.App.InputRow"
+            android:layout_marginTop="@dimen/spacing_md"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutEmailLogin">
+
+            <ImageView
+                style="@style/Widget.App.InputIcon"
+                android:src="@drawable/ic_lock" />
+
+            <EditText
+                android:id="@+id/etPasswordLogin"
+                style="@style/Widget.App.EditText"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:id="@+id/ivTogglePasswordLogin"
+                style="@style/Widget.App.InputIcon"
+                android:src="@drawable/ic_visibility" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/Widget.App.Button.Primary"
+            android:layout_marginTop="@dimen/spacing_xl"
+            android:text="Login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutPasswordLogin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ViewFlipper>

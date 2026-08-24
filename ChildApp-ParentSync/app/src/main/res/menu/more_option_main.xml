@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/stop_service"
+        android:title="Stop Service"/>
+
+    <item
+        android:id="@+id/hide_show_icon"
+        android:title="Hide App Icon"/>
+
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"/>
+
+</menu>

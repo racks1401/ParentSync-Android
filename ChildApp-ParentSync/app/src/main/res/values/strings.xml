@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ParentSync - ChildApp</string>
+    <string name="accessibility_description">This app uses Accessibility Service to:\n\n🟢 Start and manage background services (e.g., for location or safety monitoring)\n\nAccessibility access is essential for enabling these features to work reliably, even when the app is not open.\nNo personal data is collected without your knowledge, and this access is never used for keylogging or intrusive behavior.</string>
+</resources>

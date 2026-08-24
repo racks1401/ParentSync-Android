@@ -1,0 +1,81 @@
+plugins {
+    id 'com.android.application'
+    id  ("com.google.gms.google-services")
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+    id'androidx.navigation.safeargs'
+
+
+}
+
+android {
+    namespace "com.racks.parentalcontrol.parent"
+    compileSdk = 37
+
+    defaultConfig {
+        applicationId "com.racks.parentalcontrol.parent"
+        minSdk 26
+        targetSdk 36
+        versionCode 1
+        versionName "1.1"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "ParentSync-ParentApp-${variant.versionName}-${variant.buildType.name}.apk"
+        }
+    }
+
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    viewBinding{
+        enabled=true
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+    implementation(platform(libs.firebase.bom))
+
+    implementation libs.gson
+    implementation libs.webrtc
+    implementation libs.permissionx
+    implementation libs.firebase.database
+    implementation libs.firebase.auth
+    implementation libs.firebase.storage
+
+    implementation libs.play.services.maps
+    implementation libs.android.maps.utils
+    implementation libs.play.services.location
+
+    implementation libs.ssp.android
+    implementation libs.sdp.android
+    implementation libs.lottie
+    implementation libs.okhttp
+
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
+    implementation libs.glide
+
+    implementation libs.photoview
+
+}

@@ -1,0 +1,22 @@
+<resources>
+    <!-- Spacing scale -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    <dimen name="spacing_top_header">64dp</dimen>
+
+    <!-- Components -->
+    <dimen name="input_height">56dp</dimen>
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="icon_size">22dp</dimen>
+    <dimen name="radius_input">12dp</dimen>
+    <dimen name="radius_button">28dp</dimen>
+
+    <!-- Text -->
+    <dimen name="text_caption">13sp</dimen>
+    <dimen name="text_body">15sp</dimen>
+    <dimen name="text_subtitle">14sp</dimen>
+    <dimen name="text_headline">26sp</dimen>
+</resources>

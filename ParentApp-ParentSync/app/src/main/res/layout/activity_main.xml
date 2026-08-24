@@ -1,0 +1,29 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:fitsSystemWindows="true"
+    android:background="@color/color_background"
+    android:layout_height="match_parent">
+
+    <!-- Declare BottomNavigationView FIRST -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/nav_menu"
+        app:labelVisibilityMode="selected"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Now you can safely reference nav_bar_main -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/nav_bar_main"
+        app:navGraph="@navigation/main_nav"
+        app:defaultNavHost="true"/>
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map_view_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="end">
+
+        <ImageButton
+            android:id="@+id/more_options"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="more option button"
+            android:src="@drawable/ic_round_more_vert"
+            android:background="@drawable/circle_bg"
+            android:padding="9dp" />
+
+        <ImageButton
+            android:id="@+id/recenter_camera"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="camera recenter button"
+            android:src="@drawable/camera_recenter_24px"
+            android:background="@drawable/circle_bg"
+            android:layout_marginTop="10dp" />
+
+        <ImageButton
+            android:id="@+id/show_route_history"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Show history button"
+            android:src="@drawable/ic_route_24px"
+            android:background="@drawable/circle_bg"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/default_btn_bg"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:id="@+id/profile_img"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:contentDescription="TODO"
+            android:padding="15dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user_icon"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/profile_img"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_username_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13ssp"
+                android:text="Username" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ig_battery_icon_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/battery_25"/>
+
+                <TextView
+                    android:id="@+id/tv_batter_status_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100%"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_last_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update 10sec ago"
+            android:textSize="@dimen/_11ssp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

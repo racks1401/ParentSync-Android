@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="light_blue">#0091EA</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ll_bg">#F2F4FF</color>
+    <color name="device_bg">#E0F5FD</color>
+    <color name="default_background">#F6F7FF</color>
+    <color name="default_btn_bg">#D6D7D7</color>
+    <color name="separation_bar">#767676</color>
+    <color name="selection_color">#4E9B9B9B</color>
+
+    <color name="text_color">#161616</color>
+    <color name="icon_color">#161616</color>
+
+<!--    =================================-->
+
+    <color name="purple_primary">#5B4FE5</color>
+    <color name="bg_light">#F5F3FC</color>
+    <color name="text_dark">#1A1A2E</color>
+    <color name="text_gray">#9E9E9E</color>
+    <color name="input_bg">#FFFFFF</color>
+    <color name="input_stroke">#E0E0E0</color>
+    <color name="button_text">#FFFFFF</color>
+
+    <color name="color_danger">#EF4444</color>
+
+    <!-- Base palette -->
+    <color name="brand_primary">#5B4FE5</color>
+    <color name="neutral_900">#1A1A2E</color>
+    <color name="neutral_400">#9E9E9E</color>
+    <color name="neutral_200">#E0E0E0</color>
+    <color name="neutral_100">#F5F3FC</color>
+    <color name="neutral_0">#FFFFFF</color>
+
+    <!-- Semantic roles (light mode) -->
+    <color name="color_background">@color/neutral_100</color>
+    <color name="color_surface">@color/neutral_0</color>
+    <color name="color_border">@color/neutral_200</color>
+    <color name="color_text_primary">@color/neutral_900</color>
+    <color name="color_text_secondary">@color/neutral_400</color>
+    <color name="color_primary">@color/brand_primary</color>
+    <color name="color_button_text">@color/neutral_0</color>
+
+    <!-- add to existing colors.xml -->
+    <color name="color_card">@color/color_surface</color>
+    <color name="color_divider">@color/color_border</color>
+    <color name="color_label_muted">@color/color_text_secondary</color>
+
+</resources>

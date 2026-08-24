@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="light_blue">#0091EA</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ll_bg">#1F1F1F</color>
+    <color name="device_bg">#1A1A1A</color>
+    <color name="default_background">#000000</color>
+    <color name="default_btn_bg">#242424</color>
+    <color name="separation_bar">#6B6B6B</color>
+    <color name="selection_color">#4E9B9B9B</color>
+
+    <color name="text_color">#DEDEDE</color>
+    <color name="icon_color">#DEDEDE</color>
+
+<!--    ==========================-->
+
+    <color name="purple_primary">#7C72F2</color>
+    <color name="bg_light">#121212</color>
+    <color name="text_dark">#F5F5F5</color>
+    <color name="text_gray">#B0B0B0</color>
+    <color name="input_bg">#1E1E1E</color>
+    <color name="input_stroke">#333333</color>
+    <color name="button_text">#FFFFFF</color>
+
+    <color name="color_danger">#EF4444</color>
+
+    <color name="color_background">#121212</color>
+    <color name="color_surface">#1E1E1E</color>
+    <color name="color_border">#333333</color>
+    <color name="color_text_primary">#F5F5F5</color>
+    <color name="color_text_secondary">#B0B0B0</color>
+    <color name="color_primary">#7C72F2</color>
+    <color name="color_button_text">#FFFFFF</color>
+
+    <!-- add to existing colors.xml -->
+    <color name="color_card">@color/color_surface</color>
+    <color name="color_divider">@color/color_border</color>
+    <color name="color_label_muted">@color/color_text_secondary</color>
+</resources>

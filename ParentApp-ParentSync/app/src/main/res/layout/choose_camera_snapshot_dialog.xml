@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:elevation="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_front_snap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Front Camera Snapshot"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_13ssp"
+            android:padding="@dimen/_8sdp"/>
+
+        <View
+            android:id="@+id/view_snapshot"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="visible"
+            android:background="@color/separation_bar"/>
+
+        <TextView
+            android:id="@+id/tv_rear_snap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rear Camera Snapshot"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textSize="@dimen/_13ssp"
+            android:padding="@dimen/_8sdp"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

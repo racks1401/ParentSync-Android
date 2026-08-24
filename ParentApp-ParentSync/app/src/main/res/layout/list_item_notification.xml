@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="3dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tv_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AppName"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_14ssp"/>
+
+            <TextView
+                android:id="@+id/tv_notification_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:22 PM, 12 Aug 2025"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_notification_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification title"
+            android:textSize="@dimen/_12ssp"
+            android:gravity="start"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_below="@+id/ll1"
+            android:ellipsize="end"
+            android:maxLines="2"/>
+
+        <TextView
+            android:id="@+id/tv_notification_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="complete text of the notification can be of multiple lines like 2-3 line or more skjhs shdkjahlalkjhsdahdiuh kjhda ugua khkdj jhkh"
+            android:textSize="@dimen/_12ssp"
+            android:gravity="start"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_below="@+id/tv_notification_title"
+            android:ellipsize="end"
+            android:maxLines="2"/>
+
+        <LinearLayout
+            android:id="@+id/ll_expandable_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_notification_text"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_notification_big_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="15dp"
+                android:text="Big text"/>
+
+            <TextView
+                android:id="@+id/tv_notification_summary_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="5dp"
+                android:text="Summary text"/>
+
+            <TextView
+                android:id="@+id/tv_notification_sub_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="5dp"
+                android:text="Sub text"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>
