@@ -181,8 +181,8 @@ Android Developer | MCA (AI & IoT)
 
 Download the Android applications:
 
-- [Parent App APK](YOUR_GOOGLE_DRIVE_LINK)
-- [Child App APK](YOUR_GOOGLE_DRIVE_LINK)
+- [Parent App APK](https://github.com/racks1401/ParentSync-Android/releases/download/v1.1/ParentSync-ParentApp-1.1-release.apk)
+- [Child App APK](https://github.com/racks1401/ParentSync-Android/releases/download/v1.1/ParentSync-ChildApp-1.1-release.apk)
 
 > Parent and Child apps are companion applications and should be installed together for a complete demo.
 
