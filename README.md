@@ -155,6 +155,9 @@ Firebase Realtime Database should be configured with authenticated, user-specifi
 <p align="center">
   <img src="screenshots/parent-home.jpg" width="45%">
   <img src="screenshots/parent-select-child.jpg" width="45%">
+</p>
+
+<p align="center">
   <img src="screenshots/parent-location.jpg" width="45%">
   <img src="screenshots/parent-snapshots.jpg" width="45%">
 </p>
