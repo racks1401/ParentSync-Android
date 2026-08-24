@@ -153,16 +153,16 @@ Firebase Realtime Database should be configured with authenticated, user-specifi
 ### Parent App
 
 <p align="center">
-  <img src="screenshots/parent-home.png" width="45%">
-  <img src="screenshots/parent-select-child.png" width="45%">
-  <img src="screenshots/parent-location.png" width="45%">
-  <img src="screenshots/parent-snapshots.png" width="45%">
+  <img src="screenshots/parent-home.jpg" width="45%">
+  <img src="screenshots/parent-select-child.jpg" width="45%">
+  <img src="screenshots/parent-location.jpg" width="45%">
+  <img src="screenshots/parent-snapshots.jpg" width="45%">
 </p>
 
 ### Child App
 
 <p align="center">
-  <img src="screenshots/child-home.png" width="45%">
+  <img src="screenshots/child-home.jpg" width="45%">
 </p>
 
 ---
